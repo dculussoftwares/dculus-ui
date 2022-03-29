@@ -9,7 +9,7 @@ import copy from "rollup-plugin-copy";
 const packageJson = require("./package.json");
 
 export default {
-  input: "kit/index.ts",
+  input: "src/index.ts",
   output: [
     {
       file: packageJson.mainkit,
@@ -34,12 +34,12 @@ export default {
     copy({
       targets: [
         {
-          src: "kit/variables.scss",
+          src: "src/variables.scss",
           dest: "build",
           rename: "variables.scss"
         },
         {
-          src: "kit/typography.scss",
+          src: "src/typography.scss",
           dest: "build",
           rename: "typography.scss"
         }

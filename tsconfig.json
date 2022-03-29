@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "rootDir": "kit",
+      "rootDir": "src",
       "declaration": true,
       "declarationDir": "build",
       "module": "esnext",
@@ -12,13 +12,13 @@
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true
     },
-    "include": ["kit/**/*"],
+    "include": ["src/**/*"],
     "exclude": [
       "node_modules",
       "build",
       "storybook-static",
-      "kit/**/*.stories.tsx",
-      "kit/**/*.test.tsx"
+      "src/**/*.stories.tsx",
+      "src/**/*.test.tsx"
     ]
   }
   

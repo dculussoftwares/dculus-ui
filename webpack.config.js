@@ -42,7 +42,7 @@ module.exports = {
         ignored: ['**/node_modules']
     },
 
-    entry: path.resolve(__dirname, "kit", "index.js"),
+    entry: path.resolve(__dirname, "src", "index.js"),
 
     output: {
         path: packageFolder,
@@ -162,7 +162,7 @@ module.exports = {
 
         // build html file
         new HtmlWebPackPlugin({
-            template: "./kit/index.html",
+            template: "./src/index.html",
             filename: "./index.html"
         }),
 
