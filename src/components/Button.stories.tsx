@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { BiPlus } from "react-icons/bi";
 
 import Button from './Button';
 
@@ -26,7 +27,8 @@ Primary.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
-  buttonType: 'secondary'
+  buttonType: 'secondary',
+  icon: <BiPlus size={20}/>
 };
 
 export const Large = Template.bind({});
