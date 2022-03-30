@@ -1,6 +1,6 @@
 {
   "name": "dculus-ui",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "daisyUI - Tailwind CSS Components",
   "author": "Pouya Saadeghi",
   "license": "MIT",
@@ -119,6 +119,7 @@
     "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "color": "^4.2",
     "css-selector-tokenizer": "^0.8.0",
     "postcss-js": "^4.0.0",
