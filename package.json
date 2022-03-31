@@ -1,6 +1,6 @@
 {
   "name": "dculus-ui",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "daisyUI - Tailwind CSS Components",
   "author": "Pouya Saadeghi",
   "license": "MIT",
@@ -51,7 +51,7 @@
     "start": "webpack serve --hot",
     "buildlocal": "NODE_ENV=production webpack",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs-build -s ./stories/assets"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
