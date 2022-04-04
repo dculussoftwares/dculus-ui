@@ -24,7 +24,7 @@ const App = () => {
         <button data-set-theme="dark" data-act-class="ACTIVECLASS">
           dark
         </button>
-        <button data-set-theme="pink" data-act-class="ACTIVECLASS">pink</button>
+        <button data-set-theme="dragon" data-act-class="ACTIVECLASS">dragon</button>
       </body>
 
       <Btn />
