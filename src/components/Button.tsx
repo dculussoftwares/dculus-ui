@@ -18,12 +18,12 @@ const Button = ({ buttonType = 'primary', icon, name }: ButtonProps) => {
                 { "hover:border-slate-300": secondaryBtn })}>
 
                 {icon}
-                <span className={classnames("xs:block", { "ml-2": icon })}>Add view</span>
+                <span className={classnames("xs:block", { "ml-1": icon })}>Add view</span>
             </button>
 
             <button className={classnames('btn', { 'btn-primary': primaryBtn }, { "btn-secondary": secondaryBtn })}>
                 {icon}
-                <span className={classnames("xs:block", { "ml-2": icon })}> {name}</span>
+                <span className={classnames("xs:block", { "ml-1": icon })}> {name}</span>
             </button>
 
         </div>
