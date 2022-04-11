@@ -4,6 +4,8 @@
 
 :root {
     --primary-color: #6366f1;
+    --primary-color-invert: #ffffff;
+    --primary-color-hover: rgb(79 70 229);
     /* or any other variables/style */
 }
 
@@ -63,6 +65,16 @@ app {
 .btn {
     background-color: var(--primary-color);
 }
+
+.btn-primary {
+    /* @apply hover:bg-indigo-600; */
+    background-color: var(--primary-color);
+    color: var(--primary-color-invert);
+}
+.btn-primary:hover{
+    background-color:var(--primary-color-hover);    
+}
+
 
 .btn-sm {
     @apply px-2 py-1;

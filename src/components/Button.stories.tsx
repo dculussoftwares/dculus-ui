@@ -22,23 +22,28 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
+  name: 'Button',
+
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
   buttonType: 'secondary',
-  icon: <BiPlus size={20}/>
+  icon: <BiPlus size={20}/>,
+  name: 'Button',
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
   label: 'Button',
+  name: 'Button',
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   label: 'Button',
+  name: 'Button',
 };

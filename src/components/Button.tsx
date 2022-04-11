@@ -3,10 +3,11 @@ import React from "react";
 
 interface ButtonProps {
     buttonType: 'primary' | 'secondary',
-    icon?: JSX.Element
+    icon?: JSX.Element,
+    name:string
 }
 
-const Button = ({ buttonType = 'primary', icon }: ButtonProps) => {
+const Button = ({ buttonType = 'primary', icon,name }: ButtonProps) => {
     const primaryBtn = buttonType == 'primary';
     const secondaryBtn = buttonType == 'secondary';
     return (
@@ -20,8 +21,9 @@ const Button = ({ buttonType = 'primary', icon }: ButtonProps) => {
                 <span className={classnames("xs:block", { "ml-2": icon })}>Add view</span>
             </button>
 
-            <button className='btn'>
-                Test
+            <button className={classnames('btn',{'btn-primary':primaryBtn})}>
+                {icon}
+                <span className={classnames("xs:block", { "ml-2": icon })}> {name}</span>
             </button>
 
         </div>
