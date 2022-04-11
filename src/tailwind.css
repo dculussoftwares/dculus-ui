@@ -74,6 +74,7 @@ app {
 
 .btn {
     background-color: var(--primary-color);
+    border-radius: 2px;
 }
 
 .btn-primary {
