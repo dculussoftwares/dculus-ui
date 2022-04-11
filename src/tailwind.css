@@ -89,11 +89,11 @@ app {
 .btn-secondary{
     background-color: var(--secondary-color);
     color: var(--secondary-color-invert);
-    /* border: rgb(226 232 240); */
+    border: 1px solid rgb(226 232 240);
 }
 .btn-secondary:hover{
     background-color:var(--secondary-color-hover);
-    /* border: rgb(203 213 225); */
+    border: 1px solid rgb(203 213 225);
 }
 
 
