@@ -4,10 +4,10 @@ import React from "react";
 interface ButtonProps {
     buttonType: 'primary' | 'secondary',
     icon?: JSX.Element,
-    name:string
+    name: string
 }
 
-const Button = ({ buttonType = 'primary', icon,name }: ButtonProps) => {
+const Button = ({ buttonType = 'primary', icon, name }: ButtonProps) => {
     const primaryBtn = buttonType == 'primary';
     const secondaryBtn = buttonType == 'secondary';
     return (
@@ -21,7 +21,7 @@ const Button = ({ buttonType = 'primary', icon,name }: ButtonProps) => {
                 <span className={classnames("xs:block", { "ml-2": icon })}>Add view</span>
             </button>
 
-            <button className={classnames('btn',{'btn-primary':primaryBtn})}>
+            <button className={classnames('btn', { 'btn-primary': primaryBtn }, { "btn-secondary": secondaryBtn })}>
                 {icon}
                 <span className={classnames("xs:block", { "ml-2": icon })}> {name}</span>
             </button>

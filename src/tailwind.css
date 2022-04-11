@@ -6,6 +6,16 @@
     --primary-color: #6366f1;
     --primary-color-invert: #ffffff;
     --primary-color-hover: rgb(79 70 229);
+    --primary-color-border:rgb(226 232 240);
+    --primary-color-border-hover:rgb(226 232 240);
+
+    --secondary-color: #ffffff;
+    --secondary-color-invert: #475569;
+    --secondary-color-hover: #ffffff;
+    --secondary-color-border:rgb(226 232 240);
+    --secondary-color-border-hover:rgb(226 232 240);
+
+    --tw-border-opacity: 1
     /* or any other variables/style */
 }
 
@@ -67,12 +77,23 @@ app {
 }
 
 .btn-primary {
-    /* @apply hover:bg-indigo-600; */
     background-color: var(--primary-color);
     color: var(--primary-color-invert);
+    border: var(--primary-color);
 }
 .btn-primary:hover{
-    background-color:var(--primary-color-hover);    
+    background-color:var(--primary-color-hover);   
+    /* border: var(--primary-color-hover);  */
+}
+
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-invert);
+    /* border: rgb(226 232 240); */
+}
+.btn-secondary:hover{
+    background-color:var(--secondary-color-hover);
+    /* border: rgb(203 213 225); */
 }
 
 
