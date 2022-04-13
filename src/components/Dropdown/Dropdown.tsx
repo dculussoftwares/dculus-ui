@@ -42,6 +42,8 @@ const Dropdown = (props) => {
         ...theme.colors,
         primary25: "var(--primary-color-border-hover)",
         primary: "var(--primary-color)",
+        neutral30: "var(--primary-color)",
+        neutral20: "var(--primary-color-border)",
       },
     })}
       {...props}
