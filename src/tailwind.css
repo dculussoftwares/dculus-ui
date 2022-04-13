@@ -65,11 +65,11 @@ app {
 .btn,
 .btn-sm,
 .btn-xs {
-    @apply font-medium text-sm inline-flex items-center justify-center border rounded-none leading-5 shadow-sm transition duration-150 ease-in-out;
+    @apply font-normal text-sm inline-flex items-center justify-center border rounded-none leading-5 shadow-sm transition duration-150 ease-in-out;
 }
 
 .btn {
-    @apply px-2.5 py-2;
+    @apply px-2.5 py-2 h-8;
 }
 
 .btn {
@@ -106,8 +106,11 @@ app {
     @apply px-2 py-0.5;
 }
 
-
-input[type="search"]::-webkit-search-decoration,
+input
+{
+    font-size:54px;
+}
+/* input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
@@ -117,4 +120,4 @@ input[type="search"]::-webkit-search-results-decoration {
 
 input:focus {
     outline: none !important;
-}
+} */
