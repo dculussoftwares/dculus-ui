@@ -62,6 +62,7 @@ const Dropdown = (props) => {
       ...base,
       fontSize: 14,
       minHeight: 'initial',
+      borderRadius:2
     }),
     valueContainer: base => ({
       ...base,
