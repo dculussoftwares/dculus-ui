@@ -48,15 +48,14 @@ const Dropdown = (props) => {
   const targetHeight = 32;
 
   const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      borderRadius:2,
+      fontSize: 14
+    }),
     input: (provided, state) => ({
       ...provided,
       margin: 0,
-     
-      // fontSize: 14
-      // width: 100,
-      // height: 20,
-      // display: 'flex',
-      // alignItems: 'center',
     }),
     control: base => ({
       ...base,
@@ -77,25 +76,12 @@ const Dropdown = (props) => {
       ...base,
       padding: `${(targetHeight - 20 - 1 - 1) / 2}px`,
     }),
+    menu: (provided, state) => ({
+      ...provided,
+      borderRadius:2
+    }),
   };
-  // const customStyles = {
-  //   control: provided => ({
-  //     ...provided,
-  //     minHeight: "20px",
-  //   }),
-  //   indicatorsContainer: provided => ({
-  //     ...provided,
-  //     height: "20px"
-  //   }),
-  //   clearIndicator: provided => ({
-  //     ...provided,
-  //     padding: "5px"
-  //   }),
-  //   dropdownIndicator: provided => ({
-  //     ...provided,
-  //     padding: "5px"
-  //   })
-  // };
+
   return (
     <Select
       styles={customStyles}
