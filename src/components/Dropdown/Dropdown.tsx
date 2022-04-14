@@ -74,6 +74,7 @@ const Dropdown = (props) => {
     }),
     dropdownIndicator: base => ({
       ...base,
+      color:"var(--primary-color-icon)",
       padding: `${(targetHeight - 20 - 1 - 1) / 2}px`,
     }),
     menu: (provided, state) => ({
