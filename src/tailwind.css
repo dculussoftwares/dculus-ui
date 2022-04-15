@@ -147,7 +147,7 @@ input
 
 .radio-child:hover{
     border-radius: 1px;
-    color: var(--primary-color);
+    background-color: var(--primary-color-border);
 }
 
 .radio-group label {
