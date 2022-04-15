@@ -11,7 +11,7 @@ const RadioGroup = ({ options, defaultValue }: IRadioProps) => {
         console.log(event.target.value);
     };
     return (
-        <div className="radio-group" onChange={onChangeValue}>
+        <div className="radio-group text-sm" onChange={onChangeValue}>
             {options && options.map((option, index) => {
                 return <label key={index} className="radio-child">
                     <input className='radio-child-input mr-2 mt-2 mb-2' type="radio" value={option} name="radio" />{option}</label>
