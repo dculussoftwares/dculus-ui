@@ -140,7 +140,7 @@ input
     position: relative;
     /* box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05); */
     padding: 30px 45px;
-    /* display: grid; */
+   
     grid-template-columns: auto var(--radio-size);
     align-items: center;
 }
@@ -218,4 +218,9 @@ input
     100% {
         transform: scale(1, 1);
    }
+}
+
+.radio-child{
+    display: flex;
+    flex-direction: row;
 }
