@@ -139,7 +139,7 @@ input
     color: var(--text);
     position: relative;
     /* box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05); */
-    padding: 30px 45px;
+    /* padding: 30px 45px; */
    
     grid-template-columns: auto var(--radio-size);
     align-items: center;
@@ -154,7 +154,6 @@ input
     height: var(--radio-size);
     width: var(--radio-size);
     outline: none;
-    margin: 0;
     cursor: pointer;
     border: 1px solid var(--radio);
     background: transparent;
@@ -224,4 +223,5 @@ input
 .radio-child{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
