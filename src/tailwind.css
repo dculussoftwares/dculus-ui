@@ -131,7 +131,7 @@ input
     --radio-size: 20px;
     /* --width: 100px;
     --height: 140px; */
-    --border-radius: 10px;
+    --border-radius: 1px;
     /* background: var(--background); */
     /* width: var(--width);
     height: var(--height); */
@@ -156,7 +156,7 @@ input
     outline: none;
     margin: 0;
     cursor: pointer;
-    border: 2px solid var(--radio);
+    border: 1px solid var(--radio);
     background: transparent;
     border-radius: 50%;
     display: grid;
@@ -181,6 +181,7 @@ input
     opacity: var(--opacity, 1);
 }
 .radio-group input[type="radio"]::after {
+    border: 7px solid var(--primary-color);
     position: relative;
     width: calc(100% /2);
     height: calc(100% /2);
