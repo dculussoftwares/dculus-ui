@@ -194,7 +194,7 @@ input
     opacity: var(--opacity, 1);
 }
 .radio-group input[type="radio"]::after {
-    border: 7px solid var(--primary-color);
+    border: 6px solid var(--primary-color);
     position: relative;
     width: calc(100% /2);
     height: calc(100% /2);
