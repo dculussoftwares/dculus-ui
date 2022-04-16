@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { BiPlus } from "react-icons/bi";
+import { BiPlus, BiPlanet } from "react-icons/bi";
+import Icon from '../Icons/Icon'
 
 import Header from './Header'
 
@@ -24,8 +25,13 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   label: 'RadioGroup',
-//   options: options1
-
+  rightComponents: [
+    <Icon icon={<BiPlus size={20} />} />,
+    <Icon icon={<BiPlanet size={20} />} />
+  ],
+  leftComponents: [
+    <Icon icon={<BiPlus size={20} />} />,
+    <Icon icon={<BiPlanet size={20} />} />],
 };
 
 
