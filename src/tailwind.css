@@ -5,6 +5,12 @@
 /* FAF9F8 */
 
 :root {
+    --tw-border-opacity: 1;
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+
+
+
     --primary-color: #6366f1;
     --primary-header-backgroud: #ffffff;
     --primary-color-invert: #ffffff;
@@ -12,8 +18,14 @@
     --primary-color-select: rgb(79 70 229);
     --primary-color-border: #F3F2F1;
     --primary-color-border-hover: rgb(226 232 240);
-    --primary-color-icon: rgb(138, 155, 177);
+    /*  --primary-icon-color: rgb(138, 155, 177); */
+    
     --primary-color-backgroud: #ffffff;
+
+     --primary-icon-color:rgb(100 116 139 / var(--tw-text-opacity));
+    --primary-icon-backgroud:rgb(241 245 249 / var(--tw-bg-opacity));
+    --primary-icon-hover:rgb(226 232 240 / var(--tw-bg-opacity));
+    
 
     --secondary-color: #ffffff;
     --secondary-color-invert: #475569;
@@ -21,7 +33,7 @@
     --secondary-color-border: rgb(226 232 240);
     --secondary-color-border-hover: rgb(226 232 240);
 
-    --tw-border-opacity: 1
+
         /* or any other variables/style */
 }
 
@@ -274,4 +286,18 @@ input {
 .header {
     background-color: var(--primary-header-backgroud);
     border-color: var(--primary-color-border);
+}
+
+
+
+/* ICON */
+
+.icon {
+    background-color: var(--primary-icon-backgroud);
+    color: var( --primary-icon-color);
+    /* border: 1px solid rgb(226 232 240); */
+}
+
+.icon:hover{
+    background-color: var(--primary-icon-hover);
 }
