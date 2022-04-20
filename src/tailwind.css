@@ -42,7 +42,27 @@
 }
 
 [data-theme='dragon'] {
-    --primary-color: #ffabc8;
+    --primary-color:  rgb(0, 120, 212);;
+    --primary-header-backgroud: #ffffff;
+    --primary-color-invert: #ffffff;
+    --primary-color-hover: #F3F2F1;
+    --primary-color-select: rgb(79 70 229);
+    --primary-color-border: #F3F2F1;
+    --primary-color-border-hover: rgb(226 232 240);
+    /*  --primary-icon-color: rgb(138, 155, 177); */
+
+    --primary-color-backgroud: #ffffff;
+
+    --primary-icon-color: rgb(100 116 139 / var(--tw-text-opacity));
+    --primary-icon-backgroud: rgb(241 245 249 / var(--tw-bg-opacity));
+    --primary-icon-hover: rgb(226 232 240 / var(--tw-bg-opacity));
+
+
+    --secondary-color: #ffffff;
+    --secondary-color-invert: #475569;
+    --secondary-color-hover: #ffffff;
+    --secondary-color-border: rgb(226 232 240);
+    --secondary-color-border-hover: rgb(226 232 240);
 }
 
 /* body {
