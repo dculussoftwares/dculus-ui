@@ -2,6 +2,24 @@ import React from 'react';
 import Select from 'react-select';
 
 
+// control: base => ({
+//   ...base,
+//   fontSize: 14,
+//   minHeight: 'initial',
+//   borderRadius: 2,
+//   border: '1px solid var(--primary-color-hover)',
+//   boxShadow: 'none',
+//   '&:hover': {
+//     border: '1px solid var(--primary-color-select)',
+//   },
+//   '&:focus': {
+//     border: '1px solid var(--primary-color-select)',
+//   }
+//   // border: 2,
+//   // // This line disable the blue border
+//   // boxShadow: 'none'
+// }),
+
 interface DropdownProps {
   dropdownType: 'primary' | 'secondary',
   icon?: JSX.Element,
@@ -12,57 +30,54 @@ interface DropdownProps {
 
 const Dropdown = (props) => {
 
-
-  // const customStyles = {
-  //   option: (provided, state) => ({
-  //     ...provided,
-  //     borderBottom: '1px dotted pink',
-  //     color: state.isSelected ? 'red' : 'blue',
-  //     padding: 20,
-  //   }),
-  //   control: () => ({
-  //     // none of react-select's styles are passed to <Control />
-  //     width: 200,
-  //   }),
-  //   singleValue: (provided, state) => {
-  //     const opacity = state.isDisabled ? 0.5 : 1;
-  //     const transition = 'opacity 300ms';
-
-  //     return { ...provided, opacity, transition };
-  //   }
-  // }
-
-  // const customStyles = {
-  //   input: (provided, state) => ({
-  //     ...provided,
-  //     width: 100,
-  //     height: 20,
-  //     display: 'flex',
-  //     alignItems: 'center',
-  //   }),
-  //   singleValue: (provided, state) => ({
-  //     ...provided,
-  //     marginTop: 2,
-  //   }),
-  // };
   const targetHeight = 32;
+  const hoverColor = 'var(--primary-color-select)';
 
   const customStyles = {
     option: (provided, state) => ({
       ...provided,
-      borderRadius:2,
+      borderRadius: 2,
       fontSize: 14
     }),
     input: (provided, state) => ({
       ...provided,
       margin: 0,
     }),
-    control: base => ({
+    // control: base => ({
+    //   ...base,
+    //   fontSize: 14,
+    //   minHeight: 'initial',
+    //   borderRadius: 2,
+    //   border: '1px solid var(--primary-color-hover)',
+    //   boxShadow: 'none',
+    //   '&:hover': {
+    //     border: '1px solid var(--primary-color-select)',
+    //   },
+    //   '&:focus': {
+    //     border: '1px solid var(--primary-color-select)',
+    //   }
+    //   // border: 2,
+    //   // // This line disable the blue border
+    //   // boxShadow: 'none'
+    // }),
+
+    control: (base, state) => ({
       ...base,
+
       fontSize: 14,
       minHeight: 'initial',
-      borderRadius:2
+      borderRadius: 2,
+
+      boxShadow: state.isFocused ? 0 : 0,
+      borderColor: state.isFocused
+        ? hoverColor
+        : base.borderColor,
+      '&:hover': {
+        borderColor: hoverColor,
+      }
     }),
+
+
     valueContainer: base => ({
       ...base,
       height: `${targetHeight - 1 - 1}px`,
@@ -74,12 +89,12 @@ const Dropdown = (props) => {
     }),
     dropdownIndicator: base => ({
       ...base,
-      color:"var(--primary-color-icon)",
+      color: "var(--primary-color-icon)",
       padding: `${(targetHeight - 20 - 1 - 1) / 2}px`,
     }),
     menu: (provided, state) => ({
       ...provided,
-      borderRadius:2
+      borderRadius: 2
     }),
   };
 
