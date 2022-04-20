@@ -205,7 +205,7 @@ app {
     justify-items: center;
     align-items: center;
     overflow: hidden;
-    transition: border 0.5s ease;
+    /* transition: border 0.5s ease; */
 }
 
 .radio-group input[type="radio"]:hover {
@@ -236,7 +236,7 @@ app {
     height: calc(100% /2);
     background: var(--radio-checked);
     top: var(--y, 100%);
-    transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63);
+    /* transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63); */
 }
 
 
@@ -269,7 +269,7 @@ app {
 
 .radio-group input[type="radio"]:not(:checked)::before {
     --opacity: 1;
-    transition: opacity 0s linear 0.5s;
+    /* transition: opacity 0s linear 0.5s; */
 }
 
 @keyframes stretch-animate {
