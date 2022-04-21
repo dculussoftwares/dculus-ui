@@ -1,25 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
 
-
-// control: base => ({
-//   ...base,
-//   fontSize: 14,
-//   minHeight: 'initial',
-//   borderRadius: 2,
-//   border: '1px solid var(--primary-color-hover)',
-//   boxShadow: 'none',
-//   '&:hover': {
-//     border: '1px solid var(--primary-color-select)',
-//   },
-//   '&:focus': {
-//     border: '1px solid var(--primary-color-select)',
-//   }
-//   // border: 2,
-//   // // This line disable the blue border
-//   // boxShadow: 'none'
-// }),
-
 interface DropdownProps {
   dropdownType: 'primary' | 'secondary',
   icon?: JSX.Element,
@@ -31,7 +12,7 @@ interface DropdownProps {
 const Dropdown = (props) => {
 
   const targetHeight = 32;
-  const hoverColor = 'var(--primary-color-select)';
+  const focusColor = 'var(--primary-color-focus)';
 
   const customStyles = {
     option: (provided, state) => ({
@@ -43,23 +24,6 @@ const Dropdown = (props) => {
       ...provided,
       margin: 0,
     }),
-    // control: base => ({
-    //   ...base,
-    //   fontSize: 14,
-    //   minHeight: 'initial',
-    //   borderRadius: 2,
-    //   border: '1px solid var(--primary-color-hover)',
-    //   boxShadow: 'none',
-    //   '&:hover': {
-    //     border: '1px solid var(--primary-color-select)',
-    //   },
-    //   '&:focus': {
-    //     border: '1px solid var(--primary-color-select)',
-    //   }
-    //   // border: 2,
-    //   // // This line disable the blue border
-    //   // boxShadow: 'none'
-    // }),
 
     control: (base, state) => ({
       ...base,
@@ -70,10 +34,10 @@ const Dropdown = (props) => {
 
       boxShadow: state.isFocused ? 0 : 0,
       borderColor: state.isFocused
-        ? hoverColor
+        ? focusColor
         : base.borderColor,
       '&:hover': {
-        borderColor: hoverColor,
+        borderColor: focusColor,
       }
     }),
 

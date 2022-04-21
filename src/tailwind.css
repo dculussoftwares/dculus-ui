@@ -15,7 +15,7 @@
     --primary-header-backgroud: #ffffff;
     --primary-color-invert: #ffffff;
     --primary-color-hover: #F3F2F1;
-    --primary-color-select: rgb(79 70 229);
+    --primary-color-focus: rgb(79 70 229);
     --primary-color-border: #F3F2F1;
     --primary-color-border-hover: rgb(226 232 240);
     /*  --primary-icon-color: rgb(138, 155, 177); */
@@ -46,7 +46,7 @@
     --primary-header-backgroud: #ffffff;
     --primary-color-invert: #ffffff;
     --primary-color-hover: #F3F2F1;
-    --primary-color-select: rgb(79 70 229);
+    --primary-color-focus: rgb(79 70 229);
     --primary-color-border: #F3F2F1;
     --primary-color-border-hover: rgb(226 232 240);
     /*  --primary-icon-color: rgb(138, 155, 177); */
@@ -122,7 +122,7 @@ app {
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-color-select);
+    background-color: var(--primary-color-focus);
     /* border: var(--primary-color-hover);  */
 }
 
@@ -340,5 +340,5 @@ input::placeholder {
 }
 
 .input-v:hover , .input-v:focus {
-    border: 1px solid var(--primary-color-select);
+    border: 1px solid var(--primary-color-focus);
 }
