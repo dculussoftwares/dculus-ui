@@ -42,13 +42,14 @@
 }
 
 [data-theme='dragon'] {
-    --primary-color:  rgb(0, 120, 212);;
+    --primary-color: rgb(24, 90, 189);
+    ;
     --primary-header-backgroud: #ffffff;
     --primary-color-invert: #ffffff;
     --primary-color-hover: #F3F2F1;
-    --primary-color-focus: rgb(79 70 229);
-    --primary-color-border: #F3F2F1;
-    --primary-color-border-hover: rgb(226 232 240);
+    --primary-color-focus: rgb(22, 81, 170);
+    --primary-color-border: rgb(163, 162, 160);
+    --primary-color-border-hover: rgb(50, 49, 48);
     /*  --primary-icon-color: rgb(138, 155, 177); */
 
     --primary-color-backgroud: #ffffff;
@@ -339,6 +340,10 @@ input::placeholder {
     border: 1px solid var(--primary-color-border);
 }
 
-.input-v:hover , .input-v:focus {
+.input-v:hover {
+    border: 1px solid var(--primary-color-border-hover);
+}
+
+.input-v:focus {
     border: 1px solid var(--primary-color-focus);
 }
