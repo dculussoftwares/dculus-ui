@@ -13,7 +13,7 @@ const Dropdown = (props) => {
 
   const targetHeight = 32;
   const focusColor = 'var(--primary-color-focus)';
-
+  const hoverColor = 'var(--primary-color-border-hover)';
   const customStyles = {
     option: (provided, state) => ({
       ...provided,
@@ -37,10 +37,9 @@ const Dropdown = (props) => {
         ? focusColor
         : base.borderColor,
       '&:hover': {
-        borderColor: focusColor,
+        borderColor: hoverColor,
       }
     }),
-
 
     valueContainer: base => ({
       ...base,
