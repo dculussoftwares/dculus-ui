@@ -11,9 +11,10 @@ interface DropdownProps {
 
 const Dropdown = (props) => {
 
-  const targetHeight = 32;
+  const targetHeight = 30;
   const focusColor = 'var(--primary-color-focus)';
   const hoverColor = 'var(--primary-color-border-hover)';
+  const primaryBorderColor = 'var(--primary-color-border)';
   const customStyles = {
     option: (provided, state) => ({
       ...provided,
@@ -35,7 +36,7 @@ const Dropdown = (props) => {
       boxShadow: state.isFocused ? 0 : 0,
       borderColor: state.isFocused
         ? focusColor
-        : base.borderColor,
+        : primaryBorderColor,
       '&:hover': {
         borderColor: hoverColor,
       }
