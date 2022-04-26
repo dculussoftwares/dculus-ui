@@ -1,10 +1,9 @@
 const buttons = {
     '.btn-red': {
-        padding: '.5rem 1rem',
-        borderRadius: '.25rem',
+        "@apply py-2 px-14 bg-blue-500 text-black font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75": {},
         fontWeight: '600',
         backgroundColor: '#e3342f',
-        color: '#fff',
+       
         '&:hover': {
             backgroundColor: '#cc1f1a'
         }
