@@ -39,6 +39,7 @@ const App = () => {
           dark
         </button>
         <button data-set-theme="dragon" data-act-class="ACTIVECLASS">dragon</button>
+        <button className='btn-red'>Ommm</button>
       </body>
     </div>
     // <div className="App bg-[#eee] h-[100vh] flex items-center justify-center flex-col">

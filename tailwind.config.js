@@ -1,3 +1,7 @@
+const plugin = require('tailwindcss/plugin')
+const { buttons} = require('./src/components/Button/style')
+// import { cube, foo, graph } from './src/components/Button/index';
+
 function withOpacityValue(variable) {
   return ({ opacityValue }) => {
     if (opacityValue === undefined) {
@@ -20,5 +24,10 @@ module.exports = {
       }
     }
   },
+  plugins: [
+    plugin(function ({ addComponents }) {
+      addComponents(buttons)
+    })
+  ],
 
 };
